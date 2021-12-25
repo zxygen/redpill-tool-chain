@@ -45,7 +45,7 @@ jobs:
           ./redpill_tool_chain.sh add https://github.com/jumkey/redpill-load/raw/develop/redpill-virtio/rpext-index.json
           ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/mpt3sas/rpext-index.json
 
-      - name: 编译引导镜像
+      - name: 编译引导镜像1
         run: ./redpill_tool_chain.sh auto ${{matrix.platform}}-${{matrix.version}}
 
 
